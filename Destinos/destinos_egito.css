@@ -1,0 +1,110 @@
+body {
+    overflow-x: hidden;
+}
+.stat {
+    font-size: 30px;
+}
+.TipoDeFonte {
+    font-family: 'Source Serif Pro', serif;
+}
+.numeral {
+    bottom: 0;
+    left: 25px;
+    position: absolute;
+}
+.numeral-line {
+    position: absolute;
+    bottom: 10px;
+    width: 10px;
+}
+.ArticleVermelha {
+    color: #ff4a46;
+}
+.bg-ArticleVermelha {
+    background-color: #ff4a46;
+}
+.container {
+    padding: 25px;
+}
+.f8 {
+    font-size: 0.65rem;
+}
+
+@media (min-width: 1160px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 0.75rem;
+        grid-auto-rows: 55px;
+        max-width: 1100px;
+        margin: 100px auto;
+        border-top: 1px solid #000;
+   }
+    .PrimeiraFolha {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        border-right: 1px solid #000;
+   }
+    .SegundaFolha {
+        grid-column-start: 3;
+        grid-column-end: span 4;
+        border-right: 1px solid #000;
+   }
+   .texto-1 {
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 9;
+        grid-row-end: 22;
+        padding: 15px 25px;
+   }
+    .texto-2 {
+        grid-column-start: 7;
+        grid-column-end: 11;
+        grid-row-start: 13;
+        grid-row-end: 22;
+        padding: 15px 25px;
+   }
+    .folha-3 {
+        grid-column: span 2;
+        border-right: 1px solid #000;
+   }
+    .folha-4 {
+        grid-column: span 2;
+   }
+    .image {
+        grid-column-start: 9;
+        grid-column-end: 11;
+        grid-row-start: 3;
+        grid-row-end: 12;
+        grid-column-gap: 0;
+        background: url("https://i.pinimg.com/236x/72/87/72/7287721e7835ef6f596b63433856e95a.jpg");
+        background-position: left;
+        background-size: 350px;
+        margin-right: -400px;
+        padding: 0;
+        border-radius: 5px;
+   }
+    .article-intro {
+        grid-row-start: 3;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: span 7;
+        padding: 0;
+   }
+    .caption {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 10;
+        grid-row-end: 12;
+        align-self: end;
+        padding-right: 30px;
+        margin-right: 0;
+   }
+    .informaçao {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 9;
+        grid-row-end: 14;
+        padding: 0;
+   }
+}
